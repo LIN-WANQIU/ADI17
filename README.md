@@ -2,7 +2,7 @@
 ## Description:
 This is an end-to-end DID model based on the transformer neural network architecture.
 
-All the experiences are carried out on the ADI17 dataset. 
+All the experiences are carried out on the ADI17 dataset.(http://groups.csail.mit.edu/sls/downloads/adi17/) 
 
 All the results of this experience have been summited to APIL 2020 conference.
 
