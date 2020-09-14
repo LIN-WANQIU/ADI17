@@ -49,7 +49,7 @@ log_dir='/home/wanqiu/final_dev5/model_4/model_ep23.pth'#load pretrain model
 if os.path.exists(log_dir):
     model = torch.load(log_dir)
     start_epoch = 23
-    print('load epoch {} successfully！'.format(start_epoch))
+    print('load epoch {} successfully!'.format(start_epoch))
 else:
     start_epoch = 0
     print('No saved model, training from scratch!')
@@ -104,7 +104,7 @@ for epoch in range(start_epoch,60):
                 correct += (pred == ys).sum().item()
                 total += ys.size(0)
             accuracy = float(correct) / total
-            if accuracy >=0.836 and savepoint % 8 == 0 :
+            if accuracy >=0.83 and savepoint % 8 == 0 :
                 torch.save(model, './model/model_ep' + str(epoch+1) +'_'+str(step+1)+'.pth')
                 savepoint = savepoint+1
             print('[%d, %5d] loss: %.3f | Acc = %.4f lr =%f ' %
