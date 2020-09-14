@@ -44,7 +44,7 @@ encoder = Encoder(args.d_input * args.LFR_m, args.n_layers_enc, args.n_head,
 
 model = Transformer(encoder)
 
-log_dir='/home/wanqiu/final_dev5/model_4/model_ep23.pth'#load pretrain model 
+log_dir='/home/wanqiu/final_adi/model/model_ep23.pth'#load pretrain model 
 
 if os.path.exists(log_dir):
     model = torch.load(log_dir)
