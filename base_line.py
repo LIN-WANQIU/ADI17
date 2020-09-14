@@ -10,7 +10,7 @@ import torch.optim as optim
 
 from m5data import m5Dataset,m5DataLoader
 
-TRAINED_MODEL = '/home/wanqiu/final_dev4/model_6/model_ep30.pth'
+TRAINED_MODEL = '/home/wanqiu/final_adi/model/model_ep30.pth'
 
 print('loading data...')
 test_data = m5Dataset('data/dev_shuffle/')
