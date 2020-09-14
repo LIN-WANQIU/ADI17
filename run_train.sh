@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=train_1
-#SBATCH --output=res_4_1_1.txt
+#SBATCH --job-name=train
+#SBATCH --output=res_train.txt
 #SBATCH --ntasks=2
 #SBATCH --gres=gpu:1
 #SBATCH -w hlt01
