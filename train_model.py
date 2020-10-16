@@ -108,7 +108,7 @@ for epoch in range(start_epoch,60):
                 torch.save(model, './model/model_ep' + str(epoch+1) +'_'+str(step+1)+'.pth')
                 savepoint = savepoint+1
             print('[%d, %5d] loss: %.3f | Acc = %.4f lr =%f ' %
-                  (epoch + 1, step + 1, running_loss / CHECK_STEP,accuracy,optimizer.param_groups[0]['lr']))  # 每1000次迭代，输出loss的平均值
+                  (epoch + 1, step + 1, running_loss / CHECK_STEP,accuracy,optimizer.param_groups[0]['lr']))  
             running_loss = 0.0
             model.train()
             #scheduler.step()
