@@ -1,4 +1,4 @@
-# ADI17
+## Transformer-based dialect identification
 ## Description:
 This is an end-to-end DID model based on the transformer neural network architecture.
 
