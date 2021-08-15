@@ -62,6 +62,8 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.8)
 #scheduler = optim.lr_scheduler.StepLR(optimizer,step_size=50, gamma=0.8)
 
+print('Loading data.')
+train_data=('data/train_shuffle/')
 train_dataloader = m5DataLoader(train_data,batch_size=10)
 
 acc_data = m5Dataset('data/acc2/')
